@@ -1,4 +1,4 @@
-Copyright: /Copyright.md
+﻿Copyright: /Copyright.md
 CSS: {{Theme.CSSX}}
 CSS: /TemplateContent/TemplateStyles.cssx
 Javascript: /Community/Community.js
@@ -11,9 +11,9 @@ Icon: /favicon.ico
 * &#9776;
 * [Home](/TemplateContent/Index.md)
 * [Content](#)
-	* [Anonymous](#)
-	* [Authenticated (Neuro-Access)](#)
-	* [Authenticated (Admin)](#)
+	* [Anonymous](ContentAnonymous.md)
+	* [Authenticated (Neuro-Access)](ContentNeuroAccess.md)
+	* [Authenticated (Admin)](ContentAdmin.md)
 * [Placeholder](#)
 * [%Title]
 * {{exists(QuickLoginUser)?]][<img id='userAvatar' alt="((QuickLoginUser.UserName))" with="40" height="40" src="((QuickLoginUser.AvatarUrl))?Width=40&Height=40"/> ((QuickLoginUser.UserName))](#)
@@ -24,6 +24,8 @@ Icon: /favicon.ico
 	* [Markdown](/Markdown.md)
 	* [Script](/Script.md)
 	* [LinkedIn](https://www.linkedin.com/company/trust-anchor-group/)
+	* [GitHub](https://github.com/Trust-Anchor-Group)
+	* [Repository](https://github.com/Trust-Anchor-Group/TemplateContentOnlyPackage)
 	* [Contact](https://lab.tagroot.io/Feedback.md)
 * [Placeholder](#)
 

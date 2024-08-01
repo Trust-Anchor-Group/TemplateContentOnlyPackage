@@ -1,0 +1,14 @@
+﻿code
+{
+	white-space: nowrap;
+}
+
+table > tbody > tr:nth-child(odd) > td:first-child
+{
+	background-color:¤Col1Bg:=Blend(BackgroundColor,HeaderColor,0.25);Blend(Col1Bg,"Black",0.02)¤;
+}
+
+table > tbody > tr:nth-child(even) > td:first-child
+{
+	background-color:¤Blend(Col1Bg,"Black",0.1)¤;
+}
