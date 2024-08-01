@@ -22,7 +22,8 @@ Steps to create a content-only service
 4.  Add a reference to the content files in the `gateway.config` file (see below) so the Neuron(R) can find the files while you work with them.
 	You will need to restart the IoT Broker service for the changes to take effect.
 
-5.  Add content files to the project, as required.
+5.  Add content files to the project, as required. Instructions and descriptions of the different content file types and how to work with them
+	is made available in the content published by the template itself.
 
 6.  Update the Manifest file so it contains all referenced content files and folders necessary to install service on a Neuron(R). You do
 	not need to reference content files that are part of the Neuron(R) distribution itself.
