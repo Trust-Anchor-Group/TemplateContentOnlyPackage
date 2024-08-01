@@ -17,7 +17,15 @@ Steps to create a content-only service
 
 3.  [Install a Neuron](https://lab.tagroot.io/Documentation/Neuron/InstallBroker.md) on your development machine, that you can use for debugging 
 	and testing.
+
 	* Since a Content-Only package does not require the Neuron(R) to stop during updates, the service can run while you develop.
+
+	* If the project requires you to use *Neuro-Access* to login to show protected pages, your *development neuron* needs to add the
+	XMPP addresses (JIDs) of the apps to its Roster. On published Neurons, this is not necessary, as they are federated and use their domain names
+	to interconnect with other Neurons (such as the Neurons serving your *Neuro-Access* connections). But a developer Neuron(R) cannot
+	do this, as they most probably lacks both domain names and public IP addresses. Communication in this case, is done using the XMPP
+	Addresses (JIDs) of the Neurons, as clients to their parent Neurons. For communication to pass in this case, and not be rejected as
+	invalid, the sender has to reside in the Neurons *Roster* (accessible from the Admin page, in the Communication section).
 	
 4.  Add a reference to the content files in the `gateway.config` file (see below) so the Neuron(R) can find the files while you work with them.
 	You will need to restart the IoT Broker service for the changes to take effect.
