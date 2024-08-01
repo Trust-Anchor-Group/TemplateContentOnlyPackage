@@ -13,8 +13,14 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Root", "Root", "{B864C64F-A
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "TemplateContent", "TemplateContent", "{FE17EE9B-9567-430E-8317-6B411D781F78}"
 	ProjectSection(SolutionItems) = preProject
+		Root\TemplateContent\ContentAdmin.md = Root\TemplateContent\ContentAdmin.md
 		Root\TemplateContent\ContentAnonymous.md = Root\TemplateContent\ContentAnonymous.md
+		Root\TemplateContent\ContentNeuroAccess.md = Root\TemplateContent\ContentNeuroAccess.md
 		Root\TemplateContent\Index.md = Root\TemplateContent\Index.md
+		Root\TemplateContent\Invitation.md = Root\TemplateContent\Invitation.md
+		Root\TemplateContent\Login.js = Root\TemplateContent\Login.js
+		Root\TemplateContent\Login.md = Root\TemplateContent\Login.md
+		Root\TemplateContent\LogOut.md = Root\TemplateContent\LogOut.md
 		Root\TemplateContent\Master.md = Root\TemplateContent\Master.md
 		Root\TemplateContent\TemplateStyles.cssx = Root\TemplateContent\TemplateStyles.cssx
 	EndProjectSection
