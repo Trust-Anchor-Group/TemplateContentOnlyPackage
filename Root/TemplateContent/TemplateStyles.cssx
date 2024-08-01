@@ -1,4 +1,18 @@
-﻿code
+﻿nav > ul > li:first-child
+{
+    font-size: 2em;
+    color: white;
+    margin: 0.1em 0.5em 0.1em 0.5em;
+    opacity: 1;
+}
+
+nav > ul > li > a > img
+{
+	vertical-align:middle;
+	margin: -2em 0 -2em 0;
+}
+
+code
 {
 	white-space: nowrap;
 }
