@@ -12,7 +12,7 @@ Neuro-Access
 ---------------
 
 This page can be viewed by users who authenticate themselves using Neuro-Access (or similar digital identity).
-Below, you will find what information is found in the ID you used to login to the service[^resolution].
+Below, you will find what information is found in the ID you used to login to the service.
 
 | General Information                               ||
 |:----------------|:---------------------------------|
