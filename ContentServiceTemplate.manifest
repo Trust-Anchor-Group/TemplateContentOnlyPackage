@@ -2,7 +2,6 @@
 <Module xmlns="http://waher.se/Schema/ModuleManifest.xsd">
 	<Folder name="Root">
 		<Folder name="TemplateContent">
-			<Content fileName="TemplateStyles.cssx"/>
 			<Content fileName="ContentAdmin.md"/>
 			<Content fileName="ContentAnonymous.md"/>
 			<Content fileName="ContentNeuroAccess.md"/>
@@ -12,7 +11,7 @@
 			<Content fileName="Login.md"/>
 			<Content fileName="LogOut.md"/>
 			<Content fileName="Master.md"/>
-			<Content fileName="PaymentTemplate.md"/>
+			<Content fileName="TemplateStyles.cssx"/>
 		</Folder>
 	</Folder>
 </Module>
