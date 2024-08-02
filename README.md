@@ -1,14 +1,14 @@
 Content Service Package
 ==========================
 
-This repository provides a template solution that can be forked by developers who want to create a custom content-only package for the 
-TAG Neuron(R). A Content-Only package contains no assemblies, and does not require restarting the Neuron(R) when installing the package. 
+This repository provides a template solution. Developers who want to create a custom content-only package for the TAG Neuron(R) can use this 
+repository as a template. A Content-Only package contains no assemblies, and does not require restarting the Neuron(R) when installing the package. 
 Program logic is implemented using client Javascript and [back-end server script](https://lab.tagroot.io/Script.md).
 
 Steps to create a content-only service
 -----------------------------------------
 
-1.  Fork this repository
+1.  Create a new repository based on this template repository
 	* Follow naming conventions for repositories, to make the repository easy to find. A Tag Service running on the TAG Neuron(R) typically
 	resides in a repository named `NeuronSERVICE`, where `SERVICE` is a short name for the service being implemented.
 	* It has been assumed the repository will be cloned to `C:\My Projects\TemplateContentOnlyPackage`.
