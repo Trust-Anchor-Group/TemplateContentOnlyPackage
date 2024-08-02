@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Module xmlns="http://waher.se/Schema/ModuleManifest.xsd">
+	<Folder name="Root">
+		<Folder name="TemplateContent">
+			<Content fileName="TemplateStyles.cssx"/>
+			<Content fileName="ContentAdmin.md"/>
+			<Content fileName="ContentAnonymous.md"/>
+			<Content fileName="ContentNeuroAccess.md"/>
+			<Content fileName="Index.md"/>
+			<Content fileName="Invitation.md"/>
+			<Content fileName="Login.js"/>
+			<Content fileName="Login.md"/>
+			<Content fileName="LogOut.md"/>
+			<Content fileName="Master.md"/>
+			<Content fileName="PaymentTemplate.md"/>
+		</Folder>
+	</Folder>
+</Module>
