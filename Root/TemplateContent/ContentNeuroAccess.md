@@ -1,5 +1,5 @@
 ﻿Title: Neuro-Access
-Description: This page displays content for users using Neuro-Access to authenticate themselves
+Description: This page displays the contents of the Neuro-Access ID used to login.
 Date: 2024-08-01
 Author: Peter Waher
 Master: Master.md
