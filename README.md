@@ -48,7 +48,8 @@ Steps to create a content-only service
 
 12. Provide a correct license for the repository.
 
-## Installable Package
+Installable Package
+----------------------
 
 To create a package, that can be distributed or installed, you begin by creating a *manifest file*. The repository has a manifest file
 called `ContentServiceTemplate.manifest`. It defines the content files and folders included in the package. You then use the 
@@ -56,7 +57,34 @@ called `ContentServiceTemplate.manifest`. It defines the content files and folde
 to create a package file and cryptographically sign it for secure distribution across the Neuron network. These tools are also available in 
 the installation folder of the Neuron(R) distribution.
 
-### Gateway.config
+### Generating Keys
+
+To sign and distribute a package you will need a *public* and *private* key pair. The private key is used for signing the package, and the
+public key is used as part of the key required to install a package. Each time you distribute a new package, it must be signed using the same
+private key, or the Neuron(R) receiving the new package will discard it. Each new package received is tested if it has been signed using the
+same private key. Only if the signature of the new package matches the public key of the installed version, will the new package be accepted
+as an update to the installed package.
+
+You will also need an AES key. The package is also encrypted using the symmetric AES cipher. This key is mainly used for obfuscating the
+contents of a package.
+
+To generate a new public and private key pair, as well as the AES key, you can execute the following script from a script prompt on the Neuron(R). 
+You can find it from the Admin page, in the Lab section. The *installation key* is then the concatenation of `PubKey` and `AesKey`.
+
+```
+Key:=Ed448();
+printline("PubKey: "+Base64Encode(Key.PublicKey));
+printline("PrivKey: "+select /default:EllipticCurve/@d from Xml(Key.Export()));
+printline("AesKey: "+Hashes.BinaryToString(Waher.IoTGateway.Gateway.NextBytes(16)));
+```
+
+**Security Note**: The Public Key and AES Keys can be distributed together with the package to third parties for installation. They do not represent
+a protection by themselves, as they are considered known. The Private Key however, **must not** be distributed or stored in unsecure locations, 
+including cloud storage, online repositories, etc. If anyone gets access to the private key, they will be able to create a counterfit package
+of the same name.
+
+Gateway.config
+-----------------
 
 To simplify development, once the project is cloned, add a `FileFolder` reference to your repository folder in your 
 [gateway.config file](https://lab.tagroot.io/Documentation/IoTGateway/GatewayConfig.md). This allows you to test and run your changes to 
